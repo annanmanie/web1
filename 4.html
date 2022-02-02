@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+<head>
+  <title>가짜 황녀는 죽음을 원한다 - 하긴</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <h1><a href="index.html">가짜 황녀는 죽음을 원한다</a></h1>
+  <div id="grid">
+    <ul class="lists">
+      <li><a href="1.html">작품 소개</a></li>
+      <li><a href="2.html">등장인물</a></li>
+      <li><a href="3.html">키워드</a></li>
+      <li><a href="4.html">연재</a></li>
+      <li><a href="https://www.joara.com/book/1588517" title="조아라 바로가기" target="_blank">보러가기</a></li>
+      <input type="button" value="NIGHT" onclick="
+        nightDayHandler(this);
+      ">
+    </ul>
+    <div id="novel">
+      <div class="chapter">
+        <script>
+          var chapterlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+          var i = 0;
+          while (i < chapterlist.length) {
+            document.write('<button><a href=chapter'+chapterlist[i]+'.html>'+chapterlist[i]+'화</a></button>');
+            i = i + 1;
+          }
+        </script>
+      </div>
+      <div id="content">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
