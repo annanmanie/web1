@@ -60,7 +60,7 @@ input {
   margin-top: 10%;
 }
 
-@media(max-width:500px) {
+@media screen and (max-width: 500px) {
   #grid {
     display: block;
   }
@@ -68,7 +68,3 @@ input {
     border-right: none;
     margin: auto;
   }
-  h1 {
-    border-bottom: none;
-  }
-}
