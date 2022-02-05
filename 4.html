@@ -27,10 +27,22 @@
           var chapterlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
           var i = 0;
           while (i < chapterlist.length) {
-            document.write('<button><a href=chapter'+chapterlist[i]+'.html>'+chapterlist[i]+'화</a></button>');
+            document.write('<button onclick="fetchPage(\'chapter'+chapterlist[i]+'\')"><a href="#!chapter'+chapterlist[i]+'">'+chapterlist[i]+'화</a></button>');
             i = i + 1;
           }
-        </script>
+          function fetchPage(name) {
+            fetch(name).then(function(response){
+              response.text().then(function(text){
+                document.getElementById('content').innerHTML = text;
+              })
+            })
+          }
+          if(location.hash){
+            fetchPage(location.hash.substr(2));
+          } else {
+
+          }
+          </script>
       </div>
       <div id="content">
       </div>

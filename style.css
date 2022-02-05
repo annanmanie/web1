@@ -12,9 +12,12 @@ a {
 }
 h1 {
   text-align: center;
-  border-bottom: 1px solid gray;
+  background-color: rgba(255, 0, 0, 0.5);
   margin: 0;
   padding: 20px;
+  font-family: 'title';
+}
+h2 {
   font-family: 'title';
 }
 input {

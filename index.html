@@ -5,70 +5,26 @@
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="colors.js"></script>
-  <style>
-    @font-face {
-      font-family: 'title';
-      src: url(HeirofLightBold.ttf);
-    }
-    body {
-      margin: 0;
-    }
-    a {
-      color: black;
-      text-decoration:none;
-    }
-    h1 {
-      font-family: 'title';
-      text-align: center;
-      border-bottom: 1px solid gray;
-      margin: 0;
-      padding: 20px;
-    }
-    input {
-      margin-top: 30px;
-      margin-left: -5px;
-      background: rgba(0, 0, 0, 0);
-      border: none;
-    }
-    .lists {
-      font-family: 'title';
-      width: 100px;
-      margin: 0;
-      padding: 20px;
-      list-style: none;
-    }
-    #grid {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #article {
-      padding-left: 25px;
-    }
-    @media(max-width:500px) {
-      #grid {
-        display: block;
-      }
-      .lists {
-        border-right: none;
-          margin: auto;
-      }
-      h1 {
-        border-bottom: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">가짜 황녀는 죽음을 원한다</a></h1>
-  <ul class="lists">
-    <li><a href="1.html">작품 소개</a></li>
-    <li><a href="2.html">등장인물</a></li>
-    <li><a href="3.html">키워드</a></li>
-    <li><a href="4.html">연재</a></li>
-    <li><a href="https://www.joara.com/book/1588517" title="조아라 바로가기" target="_blank">보러가기</a></li>
-    <input type="button" value="NIGHT" onclick="
+  <div id="grid">
+    <ul class="lists">
+      <li><a href="1.html">작품 소개</a></li>
+      <li><a href="2.html">등장인물</a></li>
+      <li><a href="3.html">키워드</a></li>
+      <li><a href="4.html">연재</a></li>
+      <li><a href="https://www.joara.com/book/1588517" title="조아라 바로가기" target="_blank">보러가기</a></li>
+      <input type="button" value="NIGHT" onclick="
       nightDayHandler(this);
     ">
   </ul>
+    <div id="article">
+      <br>
+      <p>가짜 황녀는 죽음을 원한다</p>
+      <p>조아라에서 연재 중</p>
+    </div>
+  </div>
 </body>
 </html>
